@@ -24,15 +24,11 @@ body {
   font-size: 16px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
+  gap: 50px;
   list-style: none;
   padding-left: 0%;
   padding-top: 3.2%;
   color: #000;
-}
-
-.menu li {
-  padding: 1.5em;
 }
 
 #item {
@@ -104,18 +100,13 @@ body {
 
 .project {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   background: #34547a;
-  padding-left: 25%;
   padding-top: 5.2%;
   padding-bottom: 5.2%;
-  margin-bottom: 0;
-}
-
-img {
-  padding-right: 50px;
 }
 
 .main-title {
@@ -193,15 +184,13 @@ img {
 @media (max-width: 1440px) {
   .menu {
     margin: 0;
+    gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .project {
-    justify-content: space-evenly;
-  }
-
-  img {
-    padding-top: 10px;
-    padding-bottom: 5px;
+    gap: 20px;
   }
 
   .my-work {
