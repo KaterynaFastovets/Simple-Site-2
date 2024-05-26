@@ -1,0 +1,235 @@
+@use "modules.scss/tabs.css";
+@use "modules.scss/variables" as v;
+@use "modules.scss/mixines";
+
+.header {
+  width: 100%;
+  height: 28.4%;
+  padding-left: 20.8%;
+  background: v.$background1;
+  box-sizing: border-box;
+}
+
+.menu {
+  @include mixines.display1();
+  font-weight: 500;
+  font-size: 16px;
+  gap: 50px;
+  list-style: none;
+  padding-left: 0%;
+  padding-top: 3.2%;
+  color: v.$background2;
+}
+
+#item {
+  color: v.$background3;
+}
+
+.title {
+  @include mixines.font1();
+  margin-top: 6.6%;
+  color: v.$background2;
+}
+
+.list {
+  @include mixines.font2();
+  margin-top: 2.4%;
+  margin-right: 68%;
+  color: v.$background4;
+  box-sizing: border-box;
+}
+
+.button-write-me {
+  @include mixines.font2();
+  width: 225px;
+  height: 65px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 2.6%;
+  margin-bottom: 5.7%;
+  background: v.$background3;
+  color: v.$color1;
+}
+
+.content-1 {
+  @include mixines.display2();
+  height: 359px;
+  background: v.$background6;
+  box-sizing: border-box;
+}
+
+.about-me {
+  @include mixines.font2();
+  text-align: center;
+  margin: auto;
+  margin-bottom: 0%;
+  color: v.$color2;
+}
+
+.main-content-1 {
+  @include mixines.font2();
+  text-indent: 2em;
+  text-align: center;
+  margin: auto;
+  color: v.$background4;
+}
+
+.project {
+  @include mixines.display1();
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background: v.$background3;
+  padding-top: 5.2%;
+  padding-bottom: 5.2%;
+}
+
+.main-title {
+  margin-top: 0;
+  background: v.$background1;
+}
+
+.my-work {
+  @include mixines.font2();
+  text-align: center;
+  color: v.$color2;
+  margin-left: 39.48%;
+  margin-top: 4.1%;
+  margin-right: 39.48%;
+  margin-bottom: 0%;
+}
+
+.main-content-2 {
+  @include mixines.font2();
+  text-indent: 2em;
+  text-align: center;
+  margin-left: 35.9%;
+  margin-top: 2%;
+  margin-right: 35.9%;
+  margin-bottom: 0%;
+  color: v.$color3;
+}
+
+.footer {
+  @include mixines.display2();
+  width: 100%;
+  height: 6.13%;
+  background: v.$background3;
+  box-sizing: border-box;
+  padding-top: 2%;
+  padding-left: 21.15%;
+}
+
+.name,
+.item-2 {
+  @include mixines.footer();
+}
+
+.menu {
+  @include mixines.responsive(1440px) {
+    margin: 0;
+    gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.project {
+  @include mixines.responsive(1440px) {
+    gap: 20px;
+  }
+}
+
+.my-work {
+  @include mixines.responsive(1440px) {
+    margin-top: 60px;
+  }
+}
+
+.main-content-2 {
+  @include mixines.responsive(1440px) {
+    width: 95%;
+    text-align: center;
+    margin: 60px auto;
+  }
+}
+
+iframe {
+  @include mixines.responsive(1440px) {
+    width: 640px;
+    height: 480px;
+  }
+}
+
+.menu {
+  @include mixines.responsive(768px) {
+    font-size: 14px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+.title {
+  @include mixines.responsive(768px) {
+    width: 95%;
+    font-size: 30px;
+  }
+}
+
+.list {
+  @include mixines.responsive(768px) {
+    width: 95%;
+    padding-right: 20.8%;
+  }
+}
+
+.main-content-1 {
+  @include mixines.responsive(768px) {
+    margin-top: 30px;
+    width: 95%;
+  }
+}
+
+.project {
+  @include mixines.responsive(768px) {
+    justify-content: space-evenly;
+  }
+}
+
+img {
+  @include mixines.responsive(768px) {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+.my-work {
+  @include mixines.responsive(768px) {
+    font-size: 30px;
+    text-align: center;
+    margin: 60px auto 30px;
+  }
+}
+
+.main-content-2 {
+  @include mixines.responsive(768px) {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto 60px;
+  }
+}
+
+iframe {
+  @include mixines.responsive(768px) {
+    width: 320px;
+    height: 240px;
+  }
+}
+
+.name,
+.item-2 {
+  @include mixines.responsive(768px) {
+    font-size: 13px;
+  }
+}
