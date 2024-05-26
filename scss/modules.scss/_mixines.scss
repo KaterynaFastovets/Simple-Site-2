@@ -1,0 +1,47 @@
+$display1: flex;
+$flex-flow1: row wrap;
+$flex-flow2: column wrap;
+$line-height: 164%;
+$font-weight1: 500;
+$font-weight2: 400;
+$font-size1: 48px;
+$font-size2: 16px;
+$font-size3: 32px;
+$font-size4: 21px;
+
+@mixin display1() {
+  display: $display1;
+  flex-flow: $flex-flow1;
+}
+
+@mixin display2() {
+  display: $display1;
+  flex-flow: $flex-flow2;
+}
+
+@mixin font1() {
+  font-weight: $font-weight1;
+  font-size: $font-size1;
+  line-height: $line-height;
+}
+
+@mixin font2() {
+  font-weight: $font-weight2;
+  font-size: $font-size2;
+  line-height: $line-height;
+}
+@mixin font3() {
+  font-weight: $font-weight1;
+  font-size: $font-size3;
+}
+@mixin footer() {
+  color: #ffffff;
+  font-weight: $font-weight1;
+  font-size: $font-size4;
+}
+
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
